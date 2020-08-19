@@ -41,7 +41,7 @@ $ cookies.signed[:cookie] = depr
 $ puts cookies[:cookie]
 ```
 
-Мы получили `reverse shell`. Прописав whoami понимаем, что мы под юзером `gitlab`. Выведем содержимое `/home`:
+Мы получили `reverse shell`. Прописав `whoami` понимаем, что мы под юзером `gitlab`. Выведем содержимое `/home`:
 ```
 $ ls /home
 nikol
@@ -49,7 +49,13 @@ nikol
 
 Вспоминаем про файл с какими-то паролями, находим в нем пароль юзера `nikol` - `helloluc4`
 
-Прописываем `su nikol` и получаем ошибку:
+Прописываем 
+
+```
+$ su nikol
+```
+
+и получаем ошибку:
 
 `su must be run from terminal`
 
